@@ -6,7 +6,7 @@ This repository contains the annotation loop for the training data, the training
 
 ### Folder Contents and Structure
 
-'''
+```
 
 ├── graphs.ipynb                    contains figures code as well as annotation and training loop
 ├── annotated_data
@@ -17,7 +17,7 @@ This repository contains the annotation loop for the training data, the training
     ├──tokenizer                    trained tokenizer
     └──model                        trained model
     
-'''
+```
 
 ### Training a model using jones
 
