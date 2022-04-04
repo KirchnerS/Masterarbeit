@@ -21,4 +21,16 @@ This repository contains the annotation loop for the training data, the training
 
 ### Training a model using jones
 
-THe models have been trained from a pre-trained model with the help of annotated data using the CoLi Jones-cluster. 
+The models have been trained from a pre-trained model with the help of annotated data using the CoLi Jones-cluster. 
+Training can be started by forwarding your local machine to the server
+
+```
+ssh -L 1235:localhost:1235 -J user@login.coli.uni-saarland.de user@jones-X  # replace X with desired server
+
+```
+
+and connecting to the forwarded adress notebook
+
+```
+ssh jupyter notebook --port:1235 --no-browser
+```
