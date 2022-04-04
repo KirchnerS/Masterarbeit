@@ -21,3 +21,4 @@ This repository contains the annotation loop for the training data, the training
 
 ### Training a model using jones
 
+THe models have been trained from a pre-trained model with the help of annotated data using the CoLi Jones-cluster. 
