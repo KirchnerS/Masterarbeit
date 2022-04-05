@@ -19,18 +19,26 @@ This repository contains the annotation loop for the training data, the training
     
 ```
 
-### Training a model using jones
+### Training a model using jones on local machine
 
 The models have been trained from a pre-trained model with the help of annotated data using the CoLi Jones-cluster. 
-Training can be started by forwarding your local machine to the server
+Training can be started by forwarding your local machine to the CoLi-server
 
 ```
 ssh -L 1235:localhost:1235 -J user@login.coli.uni-saarland.de user@jones-X  # replace X with desired server
 
 ```
 
-and connecting to the forwarded adress notebook
+starting a notebook on the server 
 
 ```
-ssh jupyter notebook --port:1235 --no-browser
+ssh -J svenk@login.coli.uni-saarland.de svenk@jones-3 jupyter notebook --port=1235 --no-browser
 ```
+
+and connecting to your machine using
+
+```
+localhost:1235 # use port specified in step 2
+```
+
+The training notebook contains the training loop that is needed for training the model.
