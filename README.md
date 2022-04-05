@@ -35,7 +35,7 @@ starting a notebook on the server
 ssh -J svenk@login.coli.uni-saarland.de svenk@jones-3 jupyter notebook --port=1235 --no-browser
 ```
 
-and connecting on your machine using
+and connecting to your machine using
 
 ```
 localhost:1235 # use port specified in step 2
