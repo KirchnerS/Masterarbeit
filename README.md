@@ -7,11 +7,13 @@ This repository contains the annotation loop for the training data, the training
 ### Folder Contents and Structure
 
 ```
-
-├── graphs.ipynb                    contains figures code as well as annotation and training loop
+├── accuracy_loss                   contains .csv files for plotting loss and accuracy for trained models
+    ├──my_accuracy_loss.csv         
 ├── annotated_data
     ├── cleaned_annotated_data_training.txt 
     ├── annotated_data_training.txt
+├── graphs.ipynb                    contains figures code as well as annotation and training loop
+├── sent_analysis.py                pretrained model classifier
 ├── data_exploration.ipynb          contains code for data exploration
 └── saved_models
     ├──tokenizer                    trained tokenizer
@@ -32,7 +34,7 @@ ssh -L 1235:localhost:1235 -J user@login.coli.uni-saarland.de user@jones-X  # re
 starting a notebook on the server 
 
 ```
-ssh -J svenk@login.coli.uni-saarland.de svenk@jones-3 jupyter notebook --port=1235 --no-browser
+ssh -J user@login.coli.uni-saarland.de user@jones-X jupyter notebook --port=1235 --no-browser
 ```
 
 and connecting to your machine using
