@@ -5,7 +5,7 @@
 This repository contains the code for my Master's Thesis.
 
 ### Requirements
-The required packages can be install with the help of the requirements.txt
+The required packages can be installed with the help of the requirements.txt
 
 ```
 pip install -r requirements.txt
